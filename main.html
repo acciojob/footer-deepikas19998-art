@@ -1,35 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Footer</title>
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
-        </div>
-        <div class="link-boxes">
-          <!-- your code here -->
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 40px 20px 0;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-column {
+      flex: 1 1 200px;
+      margin: 20px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 15px;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: white;
+      background-color: #444;
+      border-radius: 50%;
+      padding: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .social-icons a:hover {
+      background-color: #666;
+    }
+
+    .footer-bottom {
+      background-color: #2c2c2c;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .footer-bottom a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-column {
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      .social-icons {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Get Started</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">App Design</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Logo Design</a></li>
+          <li><a href="#">Banner Design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Other Services</h4>
+        <ul>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Content Marketing</a></li>
+          <li><a href="#">Prints</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+918879887262">+91 8879887262</a></li>
+          <li><a href="mailto:contact@company.com">contact@company.com</a></li>
+        </ul>
+
+        <div class="social-icons">
+          <a href="#" class="media-icons"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="media-icons"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="media-icons"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="media-icons"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="media-icons"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-      </div>
-    </footer>
-  </body>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2021 company. &nbsp; <a href="#">Privacy policy</a></p>
+    </div>
+  </footer>
+
+</body>
 </html>
