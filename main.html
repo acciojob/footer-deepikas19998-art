@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Company Footer</title>
+  <title>Responsive Footer</title>
 
-  <!-- Font Awesome for Social Icons -->
+  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
@@ -26,11 +26,14 @@
     }
 
     .footer-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .link-boxes {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      max-width: 1200px;
-      margin: auto;
     }
 
     .footer-column {
@@ -64,21 +67,22 @@
       color: #fff;
     }
 
-    .social-icons {
+    /* Media Icons */
+    .media-icons {
+      display: flex;
+      gap: 10px;
       margin-top: 20px;
     }
 
-    .social-icons a {
+    .media-icons a {
       color: white;
       background-color: #444;
       border-radius: 50%;
       padding: 10px;
-      margin-right: 10px;
-      display: inline-block;
       transition: background 0.3s;
     }
 
-    .social-icons a:hover {
+    .media-icons a:hover {
       background-color: #666;
     }
 
@@ -97,7 +101,7 @@
     }
 
     @media (max-width: 768px) {
-      .footer-container {
+      .link-boxes {
         flex-direction: column;
         align-items: center;
       }
@@ -107,70 +111,82 @@
         text-align: center;
       }
 
-      .social-icons {
-        text-align: center;
+      .media-icons {
+        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Footer Section -->
+  <!-- Footer Start -->
   <footer>
     <div class="footer-container">
 
-      <div class="footer-column">
-        <h4>Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Get Started</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+      <!-- Link Sections -->
+      <div class="link-boxes">
 
-      <div class="footer-column">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#">App Design</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Logo Design</a></li>
-          <li><a href="#">Banner Design</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4>Other Services</h4>
-        <ul>
-          <li><a href="#">SEO</a></li>
-          <li><a href="#">Content Marketing</a></li>
-          <li><a href="#">Prints</a></li>
-          <li><a href="#">Social Media</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+918879887262">+91 8879887262</a></li>
-          <li><a href="mailto:contact@company.com">contact@company.com</a></li>
-        </ul>
-
-        <div class="social-icons">
-          <a href="#" class="media-icons"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="media-icons"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="media-icons"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="media-icons"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="media-icons"><i class="fab fa-youtube"></i></a>
+        <!-- Links -->
+        <div class="footer-column">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-      </div>
 
-    </div>
+        <!-- Services -->
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">App Design</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Logo Design</a></li>
+            <li><a href="#">Banner Design</a></li>
+          </ul>
+        </div>
 
+        <!-- Other Services -->
+        <div class="footer-column">
+          <h4>Other Services</h4>
+          <ul>
+            <li><a href="#">SEO</a></li>
+            <li><a href="#">Content Marketing</a></li>
+            <li><a href="#">Prints</a></li>
+            <li><a href="#">Social Media</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li>+91 8879887262</li>
+            <li>contact@company.com</li>
+          </ul>
+
+          <!-- Social Media Icons -->
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+      </div> <!-- /link-boxes -->
+
+    </div> <!-- /footer-container -->
+
+    <!-- Footer Bottom -->
     <div class="footer-bottom">
-      <p>Copyright &copy; 2021 company. &nbsp; <a href="#">Privacy policy</a></p>
+      <p>&copy; 2021 company. <a href="#">Privacy policy</a></p>
     </div>
   </footer>
+  <!-- Footer End -->
 
 </body>
 </html>
